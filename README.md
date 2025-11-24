@@ -1,6 +1,6 @@
 # 🐾 Mundo Pet - Cuidado e Carinho em um só lugar
 
-**Mundo Pet** é um projeto acadêmico de desenvolvimento front-end, simulando uma plataforma completa de e-commerce e agendamento de serviços para um Pet Shop. O foco principal foi a construção de uma interface moderna, responsiva e acessível, utilizando o framework Bootstrap 5.
+**Mundo Pet** é um projeto acadêmico de fundamentos de sistemas web, simulando uma plataforma completa de e-commerce e agendamento de serviços para um Pet Shop. O foco principal foi a construção de uma interface moderna, responsiva e acessível, utilizando o framework Bootstrap 5.
 
 ## ✨ Recursos Principais
 
