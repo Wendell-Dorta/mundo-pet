@@ -35,11 +35,12 @@ As imagens de fundo utilizadas nas seções de destaque e no carrossel da págin
 
 | Arquivo da Imagem | Descrição |
 | :--- | :--- |
-| `images/banner-home-grooming.jpg` | Banner do serviço de Estética e Bem-Estar. |
-| `images/banner-services-hero.jpg` | Hero da página de Serviços. |
-| `images/carousel-home-products.jpg` | Slide do Carrossel (Produtos). |
-| `images/carousel-home-services.jpg` | Slide do Carrossel (Agendamento). |
-| `images/carousel-home-welcome.jpg` | Slide de Boas-Vindas do Carrossel. |
+| `images/banner-home-grooming.png` | Banner do serviço de Estética e Bem-Estar. |
+| `images/banner-services-hero.png` | Hero da página de Serviços. |
+| `images/carousel-home-products.png` | Slide do Carrossel (Produtos). |
+| `images/carousel-home-services.png` | Slide do Carrossel (Agendamento). |
+| `images/carousel-home-welcome.png` | Slide de Boas-Vindas do Carrossel. |
+| `banner-services-vet-care.png` | Destaque da seção de Recomendação Veterinária. |
 
 > **Nota:** Estas imagens foram criadas usando o modelo de geração de imagens do **Gemini Nano**.
 
