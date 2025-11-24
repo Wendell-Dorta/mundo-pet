@@ -1,255 +1,299 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Produtos - Mundo Pet</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos - Mundo Pet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+  </head>
+  
+  <body>
+    <header class="main-header sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><i class="bi bi-heart-pulse-fill"></i> Mundo Pet</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="produtos.html"
+                  >Produtos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicos.html">Serviços</a>
+              </li>
+            </ul>
+            <div
+              class="header-actions d-flex flex-column flex-lg-row align-items-stretch mt-3 mt-lg-0">
+              <a
+                href="cadastro.html"
+                class="btn btn-outline-primary mb-2 mb-lg-0"
+                >Cadastre-se</a
+              >
+              <a href="login.html" class="btn btn-primary">Entrar</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <body>
-        <header>
-            <h1>Nossos Produtos - Mundo Pet</h1>
-            <nav>
-                <a href="index.html">Início</a> |
-                <a href="produtos.html">Produtos</a> |
-                <a href="servicos.html">Serviços</a>
-            </nav>
-        </header>
+    <main class="container my-5">
+      <!-- Navegação de produtos -->
+      <section class="text-center">
+        <h1 class="page-title">Nossa Vitrine de Produtos</h1>
+        <div class="product-filter-container my-4">
+          <div
+            class="btn-group flex-wrap justify-content-center"
+            role="group"
+            aria-label="Filtro de categorias de produtos">
+            <button class="btn btn-filter active" data-filter="todos">
+              Todos
+            </button>
+            <button class="btn btn-filter" data-filter="acessorios">
+              Acessórios
+            </button>
+            <button class="btn btn-filter" data-filter="racoes">Rações</button>
+            <button class="btn btn-filter" data-filter="higiene">
+              Higiene
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <main>
-            <section>
-                <nav>
-                    <p>Navegue pelas categorias:</p>
-                    <a href="#acessorios">Acessórios</a> |
-                    <a href="#racoes">Rações</a> |
-                    <a href="#higiene">Higiene e Limpeza</a>
-                </nav>
-                <hr>
+      <!-- Lista de Produtos -->
+      <section class="mt-5">
+        <!-- Produto 1: Coleira -->
+        <div id="product-grid" class="row g-3 g-md-4">
+          <div class="col-6 col-md-4 col-lg-3">
+            <a
+              href="html/detalhe-coleira-toh.html"
+              class="text-decoration-none text-dark d-block h-100">
+              <div class="product-card h-100" data-category="acessorios">
+                <div class="card-img-container">
+                  <span class="badge bg-secondary-color text-dark fw-bold"
+                    >15% OFF</span
+                  >
+                  <img
+                    src="images/coleira-toh-black.jpg"
+                    class="img-fluid"
+                    alt="Coleira Toh Black" />
+                  <button class="btn btn-add-to-cart">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Coleira Toh com Tag ID</h5>
+                  <div class="price-group">
+                    <span class="price-old">de R$ 28,22</span>
+                    <p class="price mb-0">A partir de R$ 23,99</p>
+                    <p class="price-subscription mb-0">
+                      <i class="bi bi-arrow-repeat"></i> R$ 21,59 para
+                      assinantes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-                <h2 id="acessorios">Acessórios</h2>
-                <article>
-                    <h3>Coleira Toh com Tag ID Black para Cães</h3>
-                    <img src="images/coleira-toh-black.jpg"
-                        alt="Coleira preta de poliéster com uma tag de identificação metálica.">
-                    <p>
-                        Combine estilo, segurança e conforto nos passeios com a
-                        Coleira Toh. Feita com material ultra macio e design
-                        exclusivo, ela também vem com uma tag de identificação
-                        para manter seu amigo sempre seguro.
+          <!-- Produto 2: Caixa de Transporte -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a
+              href="html/detalhe-caixa.html"
+              class="text-decoration-none text-dark d-block h-100">
+              <div class="product-card h-100" data-category="acessorios">
+                <div class="card-img-container">
+                  <img
+                    src="images/caixa-transporte-durapets.jpg"
+                    class="img-fluid"
+                    alt="Caixa de Transporte" />
+                  <button class="btn btn-add-to-cart">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Caixa de Transporte Falcon</h5>
+                  <div class="price-group">
+                    <p class="price mb-0">R$ 45,99</p>
+                    <p class="price-subscription mb-0">
+                      <i class="bi bi-arrow-repeat"></i> R$ 41,39 para
+                      assinantes
                     </p>
-                    <p>
-                        <strong>Principais Benefícios:</strong>
-                        <br>- <strong>Segurança em Dobro:</strong> Acompanha uma
-                        tag de identificação para registrar os dados do seu pet.
-                        <br>- <strong>Material Premium:</strong> Fita de
-                        poliéster 100% ultra-soft, que é confortável e muito
-                        resistente.
-                        <br>- <strong>Durabilidade Garantida:</strong> Fechos de
-                        metal zamac e argola de aço inoxidável que não
-                        enferrujam.
-                        <br>- <strong>Design Exclusivo:</strong> Estampa preta,
-                        moderna e estilosa para o dia a dia.
-                    </p>
-                    <p>Disponível nos tamanhos PP, P, M e G.</p>
-                    <h4>Tamanhos e Preços:</h4>
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Preço</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>PP</td>
-                                <td>R$ 23,99</td>
-                            </tr>
-                            <tr>
-                                <td>P</td>
-                                <td>R$ 39,99</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 44,99</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 49,99</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-                <hr>
-                <article>
-                    <h3>Caixa de Transporte DuraPets Falcon Black Amarela</h3>
-                    <img src="images/caixa-transporte-durapets.jpg"
-                        alt="Caixa de transporte de plástico, preta na base e amarela no topo, com grade frontal.">
-                    <p>
-                        Transporte seu cão ou gato de porte mini com a máxima
-                        segurança e conforto. A caixa DuraPets Falcon foi
-                        desenvolvida para oferecer durabilidade e excelente
-                        ventilação, garantindo uma viagem tranquila para o seu
-                        melhor amigo.
-                    </p>
-                    <p>
-                        <strong>Principais Benefícios:</strong>
-                        <br>- <strong>Segurança Reforçada:</strong> Estrutura
-                        parafusada e porta com trava por pinos, garantindo que
-                        seu pet não escape.
-                        <br>- <strong>Ventilação Superior:</strong> Amplas
-                        aberturas laterais e traseiras para manter o ambiente
-                        sempre arejado.
-                        <br>- <strong>Design Prático:</strong> Possui alça
-                        ergonômica para facilitar o transporte e porta com
-                        abertura para ambos os lados.
-                        <br>- <strong>Ideal para Pets Pequenos:</strong> Suporta
-                        animais de até 5kg.
-                    </p>
-                    <p>
-                        <strong>Medidas aproximadas:</strong> 45cm (Comprimento)
-                        x 32cm (Largura) x 27cm (Altura).
-                    </p>
-                    <p><strong>Valor:</strong> R$ 45,99</p>
-                </article>
-            </section>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-            <br>
+          <!-- Produto 3: Ração Golden -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a
+              href="html/detalhe-racao-golden.html"
+              class="text-decoration-none text-dark d-block h-100">
+              <div class="product-card h-100" data-category="racoes">
+                <div class="card-img-container">
+                  <span class="badge bg-secondary-color text-dark fw-bold"
+                    >10% OFF</span
+                  >
+                  <img
+                    src="images/racao-premier-golden.jpg"
+                    class="img-fluid"
+                    alt="Ração Golden Retriever" />
+                  <button class="btn btn-add-to-cart">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Ração Premier Golden - 12kg</h5>
+                  <div class="price-group">
+                    <span class="price-old">de R$ 311,10</span>
+                    <p class="price mb-0">R$ 279,99</p>
+                    <p class="price-subscription mb-0">
+                      <i class="bi bi-arrow-repeat"></i> R$ 251,99 para
+                      assinantes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-            <section>
-                <h2 id="racoes">Rações</h2>
-                <article>
-                    <h3>Ração Premier Raças Específicas Golden Retriever para
-                        Cães Adultos - 12kg</h3>
-                    <img src="images/racao-premier-golden.jpg"
-                        alt="Saco da Ração Premier para Golden Retriever com a imagem de um cão da raça na embalagem.">
-                    <p>
-                        Alimento Super Premium desenvolvido especificamente para
-                        as necessidades nutricionais de cães adultos da raça
-                        Golden Retriever. Sua fórmula exclusiva visa a saúde da
-                        pele e da pelagem, além de oferecer suporte às
-                        articulações e ao coração.
+          <!-- Produto 4: Ração Gato -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a
+              href="html/detalhe-racao-gato.html"
+              class="text-decoration-none text-dark d-block h-100">
+              <div class="product-card h-100" data-category="racoes">
+                <div class="card-img-container">
+                  <img
+                    src="images/racao-premier-gatos-light.jpg"
+                    class="img-fluid"
+                    alt="Ração Gatos Light" />
+                  <button class="btn btn-add-to-cart">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Ração Premier Gatos Light - 1.5kg</h5>
+                  <div class="price-group">
+                    <p class="price mb-0">R$ 89,90</p>
+                    <p class="price-subscription mb-0">
+                      <i class="bi bi-arrow-repeat"></i> R$ 80,91 para
+                      assinantes
                     </p>
-                    <p>
-                        <strong>Principais Benefícios:</strong>
-                        <br>- <strong>Pelagem bonita e saudável:</strong> Rico
-                        em Ômegas 3, 6
-                        e Zinco.
-                        <br>- <strong>Saúde do coração:</strong> Enriquecido com
-                        Taurina para
-                        a manutenção da função cardíaca.
-                        <br>- <strong>Saúde intestinal:</strong> Com fibras
-                        especiais e
-                        extrato de yucca, que auxilia na redução do odor das
-                        fezes.
-                        <br>- <strong>Ingredientes naturais:</strong> Sem
-                        corantes e
-                        aromatizantes artificiais.
-                    </p>
-                    <p>Disponível em embalagem de 12kg.</p>
-                    <p><strong>Valor:</strong> R$ 279,99</p>
-                </article>
-                <hr>
-                <article>
-                    <h3>Ração Premier Ambientes Internos Light para Gatos
-                        Adultos Sabor Salmão - 1,5kg</h3>
-                    <img src="images/racao-premier-gatos-light.jpg"
-                        alt="Saco da Ração Premier Light para Gatos sabor salmão.">
-                    <p>
-                        Alimento Super Premium, ideal para gatos adultos de
-                        ambientes internos que necessitam de controle de peso.
-                        Sua fórmula balanceada garante a perda de peso de forma
-                        saudável, mantendo a massa muscular e a vitalidade do
-                        seu pet.
-                    </p>
-                    <p>
-                        <strong>Principais Benefícios:</strong>
-                        <br>- <strong>Controle de Peso:</strong> Altos níveis de
-                        proteína, L-carnitina e baixos níveis de gordura
-                        auxiliam na queima de gordura.
-                        <br>- <strong>Saúde Intestinal:</strong> Rico em fibras
-                        que promovem o bom funcionamento do intestino.
-                        <br>- <strong>Saúde Dental:</strong> Contém
-                        hexametafosfato de sódio, que ajuda a reduzir a formação
-                        de tártaro.
-                        <br>- <strong>Sabor Irresistível:</strong> Delicioso
-                        sabor de salmão para agradar os paladares mais
-                        exigentes.
-                    </p>
-                    <p>Disponível em embalagens de 1,5kg</p>
-                    <p><strong>Valor:</strong> R$ 89,90</p>
-                </article>
-            </section>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-            <br>
+          <!-- Produto 5: Shampoo -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a
+              href="html/detalhe-shampoo.html"
+              class="text-decoration-none text-dark d-block h-100">
+              <div class="product-card h-100" data-category="higiene">
+                <div class="card-img-container">
+                  <img
+                    src="images/shampoo-clorexidina.jpg"
+                    class="img-fluid"
+                    alt="Shampoo Clorexidina" />
+                  <button class="btn btn-add-to-cart">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Shampoo Clorexidina Dug's</h5>
+                  <div class="price-group">
+                    <p class="price mb-0">R$ 42,99</p>
+                    <p class="price-subscription mb-0">
+                      <i class="bi bi-arrow-repeat"></i> R$ 38,69 para
+                      assinantes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Produto 6: Kit Oral Vibrac -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a
+              href="html/detalhe-kit-oral.html"
+              class="text-decoration-none text-dark d-block h-100">
+              <div class="product-card h-100" data-category="higiene">
+                <div class="card-img-container">
+                  <img
+                    src="images/kit-oral-virbac.jpg"
+                    class="img-fluid"
+                    alt="Kit Oral Virbac" />
+                  <button class="btn btn-add-to-cart">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Kit Saúde Oral Virbac</h5>
+                  <div class="price-group">
+                    <span class="price-old">de R$ 213,32</span>
+                    <p class="price mb-0">R$ 191,99</p>
+                    <p class="price-subscription mb-0">
+                      <i class="bi bi-arrow-repeat"></i> R$ 172,79 para
+                      assinantes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <section>
-                <h2 id="higiene">Higiene e Limpeza</h2>
-                <article>
-                    <h3>Shampoo Clorexidina Dug's World para Cães e Gatos
-                        500ml</h3>
-                    <img src="images/shampoo-clorexidina.jpg"
-                        alt="Frasco do Shampoo Clorexidina Dug's.">
-                    <p>
-                        Ofereça um cuidado dermatológico especial para a pele e
-                        pelagem do seu pet. O Shampoo Clorexidina Dug's World é
-                        um dermocosmético desenvolvido para auxiliar no
-                        tratamento de problemas de pele, promovendo alívio,
-                        saúde e bem-estar.
-                    </p>
-                    <p>
-                        <strong>Principais Benefícios:</strong>
-                        <br>- <strong>Ação 3 em 1:</strong> Atua como
-                        antisseborreico, antisséptico e antiquedas, combatendo
-                        as principais afecções da pele.
-                        <br>- <strong>Brilho e Saúde da Pelagem:</strong>
-                        Enriquecido com óleo de Jojoba, que hidrata e
-                        proporciona um brilho extra aos pelos.
-                        <br>- <strong>Fórmula Terapêutica:</strong> Indicado
-                        para o tratamento e prevenção, mantendo a saúde dérmica
-                        do seu cão ou gato.
-                    </p>
-                    <p>Disponível em embalagem de 500ml.</p>
-                    <p><strong>Atenção:</strong> Por ser um produto de
-                        tratamento, recomenda-se o uso conforme a orientação do
-                        médico veterinário.</p>
-                    <p><strong>Valor:</strong> R$ 42,99</p>
-                </article>
-                <hr>
-                <article>
-                    <h3>Kit de Saúde Oral Virbac Pasta e Escova para Cães e Gatos</h3>
-                    <img src="images/kit-oral-virbac.jpg"
-                        alt="Kit de saúde oral Virbac, mostrando a caixa e a escova de dentes.">
-                    <p>
-                        Mantenha a saúde bucal do seu pet em dia com o kit
-                        completo da Virbac. A pasta enzimática foi formulada
-                        especificamente para cães e gatos, atuando na prevenção
-                        da placa bacteriana e garantindo um hálito mais fresco.
-                    </p>
-                    <p>
-                        <strong>Principais Benefícios:</strong>
-                        <br>- <strong>Kit Completo:</strong> Inclui pasta
-                        enzimática e escova de dentes de cabo longo, tudo o que
-                        você precisa para começar.
-                        <br>- <strong>Combate o Mau Hálito e o Tártaro:</strong>
-                        Sua fórmula ajuda a neutralizar as bactérias que causam
-                        o mau hálito e a placa.
-                        <br>- <strong>Sabor Agradável:</strong> Sabor frango,
-                        que facilita a aceitação pelo animal.
-                        <br>- <strong>Fácil de Usar:</strong> A escova foi
-                        desenhada para alcançar todos os dentes de forma eficaz
-                        e segura.
-                    </p>
-                    <p><strong>Valor:</strong> R$ 191,99</p>
-                </article>
-            </section>
-        </main>
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; 2025 Mundo Pet. Todos os direitos reservados. Desenvolvido por
+          Wendell de Souza Dorta.
+        </p>
+      </div>
+    </footer>
 
-        <br>
-
-        <footer>
-            <p>Mundo Pet - Todos os direitos reservados - 2025.</p>
-            <p>Contato: (11) 1234-5678 | email: contato@mundopet.com</p>
-            <p>Site desenvolvido por: Wendell de Souza Dorta</p>
-        </footer>
-    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
